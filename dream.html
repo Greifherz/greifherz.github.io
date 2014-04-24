@@ -14,11 +14,12 @@ function getQueryVariable(variable)
        return(false);
 }
 	
-$(document).load(function(){
 	$('#title').remove();
     $('head').append( '<meta id="title" property="og:title" content=' + getQueryVariable("title") + '>' );
 	$('#img').remove();
     $('head').append( '<meta id="img" property="og:image" content=' + getQueryVariable("img") + '>' );
+	
+$(document).load(function(){
 });
 	
 $(document).ready(function(){
